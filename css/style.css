@@ -104,6 +104,50 @@ body {
   .inner .left h1 span {
     display: block;
   }
+  .inner .right {
+    text-align: right;
+    align-self: center;
+    padding: 0 2em 1.5em;
+    justify-self: center;
+  }
+  .inner .right input {
+    width: calc(100% - 1em) !important;
+    margin: 1em 0;
+  }
+  .inner .right button {
+    width: 100% !important;
+  }
+
+  .proto-container {
+    clip-path: inset(0 45% 0 0);
+    position: absolute;
+    top: 20%;
+    height: 70%;
+    z-index: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  .proto-container .proto {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    width: 19%;
+    height: 80%;
+    float: left;
+    margin-left: 1em;
+    transform: translateX(20%);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 22px;
+  }
+
+  .content {
+    padding: 0 6em !important;
+  }
+
+  .right {
+    padding: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
